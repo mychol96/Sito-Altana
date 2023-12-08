@@ -1,0 +1,693 @@
+
+/* NAVBAR */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+  width: 100%;
+  background-color: var(--color3);
+}
+
+.nav-bar {
+  width: 100%;
+  max-width: 1470px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: var(--color3);
+  padding: 12px 50px;
+  margin: 0 auto;
+}
+.logo img {height: 58px;}
+.menu {display: flex;}
+.menu li {padding-left: 30px; display: flex; align-items: center;}
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color2);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav-ig {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color2);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: var(--color2);
+  transition: 0.15s ease-in-out;
+}
+.nav-link:hover:after {width: 100%;}
+.open-menu , .close-menu {
+  position: absolute;
+  color: var(--color2);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {display: none;}
+
+/* MEDIA QUERY SPECIALE x NAVBAR */
+
+@media(max-width: 850px){
+  .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: var(--color1);
+      transition: all 0.2s ease-in-out;
+  }
+  .menu li {margin-top: 40px;}
+  .menu li a {padding: 10px;}
+  .open-menu , .close-menu {display: block;}
+  #check:checked ~ .menu {right: 0;}
+}
+
+/* HERO SECTION */
+
+.hero-section {
+
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/bg-hero-section.webp);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    top: 68px;
+    left: 0;
+    background-position:center center ;
+    position: absolute;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.hero-section{
+    display: flex;
+    align-items: center;
+}
+
+#hero-riquadro-giallo-esterno{
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-riquadro-giallo-interno{
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    max-width: 1200px;
+   
+    border-radius: 100px 50px;
+    background: rgba(247, 224, 166, 0.83);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.contenitore-bottone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#sottotitolo-hero {
+  padding: 0;
+}
+
+/* SEZIONE 1*/
+
+.section-1 {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-1-inner {
+  max-width: 1220px;
+}
+
+
+#carouselExampleFade {
+  margin-top: 20px;
+  box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.7);
+  border-radius: 20px;
+}
+
+
+#sezione1 {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+.dimensioni-foto {
+    aspect-ratio: 6 / 4; /* Rapporto di aspetto 4:5, puoi regolare questo valore */
+    background-size: cover;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px;
+}
+
+
+
+/* CATERING PACKAGES */
+
+.packages {
+ width: 100%;
+ max-width: 1440px;
+ display: flex;
+ justify-content: center;
+}
+
+.header {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .header-title {
+    font-size: 1.5em;
+    flex-grow: 1; 
+    white-space: nowrap;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  
+  }
+
+  .header-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .header-title span {
+    color: red;
+  }
+
+  .card-section {
+    padding: 20px;
+    margin: 20px 10px;
+    max-width: 14400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(296deg, #F7E0A6 41.99%, rgba(247, 224, 166, 0.52) 80.03%, rgba(247, 224, 166, 0.07) 115.53%);
+  }
+
+  .card {
+    position: relative;
+    margin-bottom: 20px;
+    flex-basis: calc(33.3333% - 20px);
+  
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.7);
+    aspect-ratio: 4 / 6; /* Rapporto di aspetto 4:5, puoi regolare questo valore */
+    
+    --bs-card-border-color: initial !important;
+    --bs-card-bg: initial !important;
+    border-radius: 30px 10px !important;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0), 
+                                rgba(0, 0, 0, 0.6));
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 30px 10px;
+  }
+
+  .card-title,
+  .card-subtitle,
+  .card-button {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .card-title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    bottom: 60px;
+    left: 20px;
+    color: white;
+  }
+
+  .card-subtitle {
+    margin-right: 10px;
+    bottom: 40px;
+    left: 20px;
+    color: white;
+  }
+
+  .card-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 40px;
+    left: 110px;
+  }
+
+  .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid white;
+  }
+
+
+
+/* SEZIONE 2 (Discover Our Pizza) */
+
+.sezione-2 {
+  width: 100%;
+}
+
+.sezione-2-inner {
+  display: flex;
+  justify-content: center;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.sezione-2-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.sezione-2-left p {
+  text-align: center;
+  max-width: 500px;
+}
+.sezione-2-left h3 {
+  text-align: left;
+}
+
+  .sezione-2-right{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .sezione-2-right img{
+    object-fit: contain;
+  }
+
+
+  /* OFFICIAL Partner */
+
+  .partner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partner span {
+    border: 0.25px solid #231F20;;
+    width: 70%;
+    margin-bottom: 51px;
+  }
+
+  .partner p {
+    color: #231F20;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 160% */
+    letter-spacing: 4px;
+  }
+
+  .partner img {
+    margin-top: 32px;
+    width: 100px;
+  }
+
+/* FORM */
+
+  .form {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+  }
+
+  .form img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+
+    filter: brightness(0.65); /* Puoi sperimentare con il valore (da 0 a 1) per ottenere l'effetto desiderato */
+  }
+
+  .sfumatura-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 5% 3%;
+    background: linear-gradient(180deg, #F6EFE5 0%, rgba(234, 230, 224, 0.58) 77.54%, rgba(217, 217, 217, 0.00) 109.38%);
+    max-width: 1150px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .form-left,
+  .form-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 2% 5%;
+  }
+
+  .form-right{
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  .form-right form{
+    width: 100%;
+  }
+
+  .form-right input, textarea {
+   border: none; 
+   height: 20px; 
+   margin: 5px 10px 5px 10px;
+  }
+
+  .form-right textarea {
+    height: 100px; 
+    margin: 5px 10px 5px 10px;
+  }
+
+  .form-right label {
+    margin: 10px 10px 5px 10px;
+  }
+
+  .form-right svg {
+    color: #231F20;
+  }
+
+  .datetime-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .datetime-input {
+    width: 48%;
+  }
+
+  .contatti {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 20%;
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  .contatti p {
+    margin-left: 20px;
+  
+  }
+
+  .contatti div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+ 
+
+
+ /* FOOTER */
+ footer {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(247, 224, 166, 0.10) -34.09%, #F7E0A6 96.65%);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 1500px;
+}
+
+.footer-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.footer-center {
+  width: 30%; /* Modifica la larghezza del logo centrale */
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.footer-center a {
+  width: 100%; /* Fai in modo che il link occupi l'intera larghezza del contenitore */
+}
+
+.footer-up img {
+  width: 100%;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1; /* Fai in modo che le colonne laterali occupino lo stesso spazio */
+}
+
+
+.footer-down {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+                              /* MEDIA QUERY*/
+
+
+
+/* Tablet in giu*/
+@media (max-width: 1024px) { 
+
+  
+
+    .logo-ig{
+        padding: 5PX;
+    }
+
+    .logo-altana{
+        margin-left: 40px;
+    }
+
+    /* SEZIONE 1 */
+        #sezione1{
+        display: flex;
+        flex-direction: column-reverse;
+     }
+
+     /* SEZIONE CATERING */
+
+     .card {
+      flex-basis: calc(50% - 20px);
+    }
+
+
+    /* SEZIONE 2 (discover our pizza) */
+  .sezione-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+  .sezione-2-left{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .sezione-2-left p {
+    text-align: center;
+  }
+  .sezione-2-left h3 {
+    text-align: center;
+  }
+
+  .sezione-2-right{
+    width: 100%;
+  }
+
+  .sezione-2-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+ }
+
+
+ /* Phone in giu */
+
+@media (max-width: 600px) { 
+
+
+    .logo-altana{
+        margin-left: 20px;
+    }
+
+     /* SEZIONE CATERING */
+     .card {
+      flex-basis: calc(50% - 20px);
+      margin: 10px;
+    }
+
+    .card-section {
+      margin: 10px;
+    }
+
+    .card-title {
+      font-size: 1.2em;
+      bottom: 40px;
+      left: 10px;
+    }
+
+    .card-subtitle {
+      font-size: 0.8em;
+      bottom: 20px;
+      left: 10px;
+    }
+
+    .card-button {
+      bottom: 17px;
+      left: 85px;
+    }
+
+    .header-title {
+    font-size: 1em;
+  }
+
+
+     /* SEZIONE FORM */
+
+  .sfumatura-form {
+    flex-direction: column;
+  }
+
+  .form-left,
+  .form-right {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+
+ }
+

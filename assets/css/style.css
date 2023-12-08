@@ -1,0 +1,247 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-color: #F6EFE5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #231F20;
+    font-family: "Poppins", sans-serif;
+    --color1: #FFF ;
+    --color2: #181818 ;
+    --color3: #F6EFE5;
+   
+}
+
+
+/* FONTS e STILE */
+
+
+
+.titolo-hero-section {
+    color: #231F20;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.titolo-grande{
+    color: #313131;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 136.364% */
+}
+
+.red-title{
+    color: #E01D0A;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.red-title-piccolo{
+    color: #E01D0A;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.testo-piccolo{
+    color: #231F20;
+    line-height: 177.778%; /* 177.778% */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: clamp(0.50rem, 0.5vw + 0.5rem , 1rem);
+}
+
+
+/* Spacers*/
+
+.spacer{
+    width: 100vw;
+    height: 100vh;
+}
+
+.spacer-half{
+    width: 100vw;
+    height: 70vh;
+}
+
+.spacer-2{
+    width: 100vw;
+    height: 150px;
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        height: 0.8rem; /* Per tablet */
+    }
+
+    @media (max-width: 768px) {
+        height: 0.7rem; /* Per telefoni */
+    }
+}
+
+
+
+
+.bottone-contenitore{
+    text-decoration: none;
+}
+
+
+.bottone{
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 100px 50px;
+    background: #E01D0A; 
+    border: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 160% */
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bottone:hover {
+    background:linear-gradient(to bottom, #E01D0A 5%, #E01D0A 100%);
+	background-color:#E01D0A;
+}
+
+.bottone:active {
+	position:relative;
+	top:1px;
+}
+
+.bottone-tablet{
+    display: none;
+}
+
+
+
+
+/* Tablet in giu*/
+@media (max-width: 1024px) { 
+
+    #sottotitolo-hero  {
+        font-size: 0.8rem;
+        line-height: 25px;
+    }
+
+    .titolo-hero-section{
+        font-size: 2rem;
+    }
+
+    #red-title-hero{
+        font-size: 2rem;
+    }
+
+    .bottone-reserve .bottone-discover{
+        font-size: 0.85rem;
+    }
+
+
+    .bottone-tablet{
+        display: block;
+    }
+
+    .bottone-monitor {
+        display: none;
+    }
+
+    #hero-riquadro-giallo-interno{
+        padding: 35px !important;
+    }
+
+ }
+
+ /* Phone in giu */
+
+@media (max-width: 768px) { 
+    
+    #sottotitolo-hero {
+        display: none;
+    }
+
+    .titolo-hero-section{
+        font-size: 1.8rem;
+    }
+    #red-title-hero{
+        font-size: 1.8rem;
+    }
+
+    .bottone-reserve .bottone-discover{
+        font-size: 0.75rem;
+    }
+
+    
+
+    #hero-riquadro-giallo-interno{
+        padding: 60px 40px !important;
+        width: 70%;
+    }
+ }
+
+
+
+/* MEZZI BG */
+
+
+.titolo-mezzo-bg {
+    color: var(--color1);
+    font-size: 2.5rem;
+    z-index: 100;
+    letter-spacing: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+
+  
+    @media (min-width: 769px) and (max-width: 1024px) {
+        font-size: 2rem; /* Per tablet */
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.7rem; /* Per telefoni */
+    }
+}
+
+.sottotitolo-mezzo-bg {
+    color: var(--color1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    text-align: center;
+    z-index: 100;
+    font-weight: 200;
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        font-size: 1rem; /* Per tablet */
+    }
+
+    @media (max-width: 768px) {
+        font-size: 0.7rem; /* Per telefoni */
+        letter-spacing: 4px;
+    }
+}
+
+
+
+
