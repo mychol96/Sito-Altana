@@ -7,10 +7,15 @@ header {
     z-index: 1000;
 }
 
+nav {
+  width: 100%;
+  background-color: var(--color3);
+}
+
 
 .nav-bar {
   width: 100%;
-  max-width: 1470px;
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,15 +28,20 @@ header {
 }
 
 .logo {
-  height: 58px;
   display: flex;
   align-items: center;
 }
 
-.logo img {height: 58px;
+.logo img {
+  height: 58px;
 
   @media(max-width: 850px){
     height: 2.5rem;
+    margin-left: -30px;
+
+  @media(max-width: 425px){
+      height: 2rem;
+  }
   }
 
 }
@@ -110,11 +120,6 @@ header {
 
 /* HERO SECTION */
 
-nav {
-  height: 82px;
-  width: 100%;
-  background-color: var(--color3);
-}
 
 .hero-section {
 
@@ -124,7 +129,7 @@ nav {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    top: 82px;
+    top: 60px;
     left: 0;
     background-position:center center ;
     position: absolute;
