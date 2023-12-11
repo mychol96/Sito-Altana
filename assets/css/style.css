@@ -13,9 +13,10 @@ body{
     --color1: #FFF ;
     --color2: #181818 ;
     --color3: #F6EFE5;
+   
    width: 100%;
+   overflow-x: hidden; /* o altre regole CSS in base alle tue esigenze */
 
-   overflow-x: hidden;
 }
 
 
