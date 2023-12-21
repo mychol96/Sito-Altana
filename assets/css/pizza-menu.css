@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 50vh;
-    top: 60px;
+    top: 56px;
     left: 0;
     background-position: center center;
     position: absolute;
@@ -29,6 +29,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 851px) {
+        top: 82px;
+        }
 }
 
 .hero-section-pizza::before {

@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    top: 60px;
+    top: 56px;
     left: 0;
     background-position: center center;
     position: absolute;
@@ -25,6 +25,10 @@
     -o-background-size: cover;
     background-size: cover;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: 851px) {
+        top: 82px;
+        }
 }
 
 .hero-section-about::before {

@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 50vh;
-    top: 60px;
+    top: 56px;
     left: 0;
     background-position: center 75%;
     position: absolute;
@@ -29,6 +29,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 851px) {
+        top: 82px;
+        }
 }
 
 .hero-section-catering::before {
@@ -59,9 +63,9 @@
         rgba(0, 0, 0, 0.35),
         rgba(0, 0, 0, 0.1)
       ),
-      url(../img/bg-catering.webp);
+      url(../img/pizza-only.webp);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 75%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -76,4 +80,40 @@
 
 .right-container {
     width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+.testo-catering{
+    text-align:justify;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: black;
+    font-size: small;
+}
+
+.testo-catering-lato{
+    text-align:justify;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: black;
+    font-size: x-small;
+}
+
+.dashed-line {
+    border-top: 1px dashed #000; /* Colore nero, ma puoi cambiarlo a seconda delle tue preferenze */
+    width: 100%; /* Larghezza della linea */
+    margin-top: 20px; /* Puoi regolare lo spazio sopra la linea a tuo piacimento */
+  }
+
+
+  .bottone-catering {
+    margin: 5px 15px;
+    padding: 5px 12px;
+    font-size: small;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
