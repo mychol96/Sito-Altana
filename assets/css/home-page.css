@@ -206,6 +206,15 @@ max-width: 1200px;
 border-radius: 100px 50px;
 background: rgba(247, 224, 166, 0.83);
 box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+
+@media (max-width: 768px) {
+  border-radius: 40px 70px;
+  }
+
+  @media (min-width: 425px) and (max-width: 769px) {
+    width: 70%;
+}
+
 }
 
 .contenitore-bottone {
@@ -700,8 +709,6 @@ padding: 0;
  /* Phone in giu */
 
 @media (max-width: 600px) { 
-
-
 
      /* SEZIONE CATERING */
      .card {

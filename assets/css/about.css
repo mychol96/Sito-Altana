@@ -55,3 +55,16 @@
     letter-spacing: 6px;
     z-index: 1; /* Assicurati che il testo sia sopra il layer dell'opacità */
 }
+
+
+.sezione-3 {
+  display: flex;
+
+  
+
+  @media only screen and (max-width: 1025px){
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
