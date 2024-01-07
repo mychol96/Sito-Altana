@@ -317,3 +317,17 @@ body{
 
 
 
+
+
+
+.footer__text{
+    font-size: 0.75rem;
+
+    @media (max-width: 1024px){
+        font-size: 0.5rem;
+    }
+
+    @media (max-width: 423px){
+        font-size: 0.3rem;
+    }
+}
