@@ -26,14 +26,15 @@
     background-size: cover;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 
+    @media screen and (min-width: 851px) {
+            top: 82px;
+            }
 
     @media only screen and (max-width: 425px) {
         top: 49.78px;
       }
 
-    @media screen and (min-width: 851px) {
-        top: 82px;
-        }
+    
 }
 
 .hero-section-about::before {
@@ -53,14 +54,21 @@
     font-size: 3rem;
     font-stretch: expanded;
     letter-spacing: 6px;
-    z-index: 1; /* Assicurati che il testo sia sopra il layer dell'opacità */
+    z-index: 1; 
+
+
+    @media (max-width: 1024px){
+      font-size: 2.5rem;
+  }
+
+    @media (max-width: 423px){
+        font-size: 2rem;
+    }
 }
 
 
 .sezione-3 {
   display: flex;
-
-  
 
   @media only screen and (max-width: 1025px){
     display: flex;
