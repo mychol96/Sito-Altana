@@ -575,6 +575,10 @@ padding: 0;
   }
 
 /* FORM */
+  
+  #form{
+  scroll-margin-top: 120px;
+ }
 
   .form {
     display: flex;
