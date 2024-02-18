@@ -124,9 +124,10 @@ display: none;
 
 @media (max-width: 850px) {
 .menu {
+  padding-top: 70px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  
   width: 80%;
   height: 100vh;
   position: fixed;
@@ -134,15 +135,11 @@ display: none;
   right: -100%;
   z-index: 100;
   background-color: var(--color1);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu li {
-  margin-top: 40px;
-}
-
-.menu li a {
-  padding: 10px;
+  margin-top: 30px;
 }
 
 .open-menu,
