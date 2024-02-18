@@ -61,6 +61,7 @@
 .menu-title-container {
     width: 50%;
     max-width: 720px;
+    margin: 10px;
 }
 
 .menu-title-container div {
