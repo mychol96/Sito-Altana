@@ -194,7 +194,7 @@ flex-direction: column;
 
 #hero-riquadro-giallo-interno {
 display: flex;
-padding: 30px;
+padding: 40px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -579,7 +579,7 @@ padding: 0;
 /* FORM */
   
   #form{
-  scroll-margin-top: 120px;
+  scroll-margin-top: 56px ;
  }
 
   .form {
@@ -717,7 +717,7 @@ padding: 0;
 }
 
 .footer-center a {
-  width: 100%; /* Fai in modo che il link occupi l'intera larghezza del contenitore */
+  width: 100%; /* Fa in modo che il link occupi l'intera larghezza del contenitore */
 }
 
 .footer-up img {
@@ -726,7 +726,7 @@ padding: 0;
 
 .footer-left,
 .footer-right {
-  flex: 1; /* Fai in modo che le colonne laterali occupino lo stesso spazio */
+  flex: 1; /* Fa in modo che le colonne laterali occupino lo stesso spazio */
 }
 
 
@@ -835,9 +835,8 @@ padding: 0;
     }
 
     .header-title {
-    font-size: 1em;
+    font-size: 1.35em;
   }
-
 
      /* SEZIONE FORM */
 
