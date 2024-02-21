@@ -853,3 +853,12 @@ padding: 0;
 
  }
 
+
+
+ .riquadro-giallo{
+  opacity: 0;
+ }
+
+ .riquadro-giallo-show{
+  transition: all 1.8s ease-in-out;
+ }

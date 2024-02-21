@@ -15,6 +15,12 @@ form.addEventListener('submit', e => {
 
 
 
+var elements = document.getElementsByClassName("riquadro-giallo");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].classList.add("riquadro-giallo-show");
+    elements[i].classList.remove("riquadro-giallo")
+}
+
 
 
 
