@@ -8,10 +8,11 @@ form.addEventListener('submit', e => {
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => {
       form.reset()
-      alert('Success!')
+      alert('Thank you for contacting us! \nWe will contact you as soon as possible.')
     })
     .catch(error => console.error('Error!', error.message))
 })
+
 
 
 
