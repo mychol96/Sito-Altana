@@ -688,6 +688,10 @@ padding: 0;
     margin-left: 8%;
   }
 
+  .form__link{
+    text-decoration: none;
+    color: #231F20;
+  }
 
  /* FOOTER */
  footer {
