@@ -184,14 +184,14 @@
 
 <!-- SPAZIO -->
 
-<!-- FORM -->
+ <!-- FORM -->
 
-<section class="form" id="form">
+ <section class="form" id="form">
   <img src="assets/img/bg-form.webp" alt="Background of the form">
   <div class="sfumatura-form">
     <div class="form-left">
       <h3 class="titolo-grande">Get in <span class="red-title">touch</span></h3>
-      <br>
+      
       <p class="testo-piccolo lh-sm mx-5" style="color:#181818; letter-spacing: 1.5px; text-align: center;">Please send through your catering enquiries and we will get back to you as soon as possible.</p>
       <div class="contatti">
         <div>
@@ -228,19 +228,19 @@
     </div>
     <div class="form-right">
       <form action="[LINK_DEL_MODULO_GOOGLE_FORM]" name="contact-us" method="POST" target="_blank" >
+
+      <div class="datetime-container">
+          <div class="datetime-input" style="display: flex; flex-direction: column;">
+              <label class="form-label " for="name">Name<span style="color: red;">*</span></label>
+              <input class="d-flex" width="48" type="text" id="name" name="Name" required>
+          </div>
+          <div class="datetime-input" style="display: flex; flex-direction: column;">
+              <label class="form-label" for="email">Email<span style="color: red;">*</span></label>
+              <input class="d-flex" width="48" type="email" id="email" name="Email" required>
+          </div>
+      </div>
         
-        
-          <!-- Name -->
-          <label class="form-label" for="name">Name<span style="color: red;">*</span></label>
-          <input  type="text" id="name" name="Name" required>
-          <!-- Email -->
-          <label class="form-label" for="email">Email<span style="color: red;">*</span></label>
-          <input type="email" id="email" name="Email" required>
-        
-        
-        <!-- Phone -->
-        <label class="form-label" for="phone">Phone<span style="color: red;">*</span></label>
-        <input type="tel" id="phone" name="Phone Number" required>
+
         <!-- Date and Time of Event on the Same Row -->
         <div class="datetime-container">
           <div class="datetime-input" style="display: flex; flex-direction: column;">
@@ -252,12 +252,31 @@
             <input style="padding: 0 8px; font-size: 0.8rem;" type="time" id="time" name="Time of Event" required>
           </div>
         </div>
+
+
         <!-- Location of Event -->
-        <label class="form-label" for="location">Location of Event<span style="color: red;">*</span></label>
-        <input type="text" id="location" name="Location of Event" required>
-        <!-- Number of Guests -->
-        <label class="form-label" for="guests">Number of Guests<span style="color: red;">*</span></label>
-        <input type="number" id="guests" name="Number of Guests" required>
+        <div class="datetime-container">
+          <div class="datetime-input" style="display: flex; flex-direction: column;">
+            <label class="form-label" for="location">Location of Event<span style="color: red;">*</span></label>
+            <input  type="text" id="location" name="Location of Event" required>
+          </div>
+          <div></div>
+       </div>
+
+        <div class="datetime-container">
+           <!-- Number of Guests -->
+           <div class="datetime-input" style="display: flex; flex-direction: column;">
+            <label class="form-label" for="guests">Number of Guests<span style="color: red;">*</span></label>
+            <input type="number" id="guests" name="Number of Guests" required>
+          </div>
+          <!-- Phone -->
+          <div class="datetime-input" style="display: flex; flex-direction: column;">
+            <label class="form-label" for="phone">Phone<span style="color: red;">*</span></label>
+          <input type="tel" id="phone" name="Phone Number" required>
+        </div>  
+        </div>
+        
+
         <!-- Message -->
         <label class="form-label" for="message">Message:</label>
         <textarea id="message" name="Message"></textarea>
@@ -268,8 +287,8 @@
   </div>
 </section>
 
-
 <!-- FORM -->
+
 
 <footer>
   <div class="footer-container">
